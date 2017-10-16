@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.example.darks.SettingActivity">
+
+  <Button
+    android:id="@+id/btnOk"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginEnd="14dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    android:text="확인"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@+id/linearLayout"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_constraintBottom_creator="1"
+    tools:layout_constraintLeft_creator="1"
+    tools:layout_constraintRight_creator="1"
+    tools:layout_constraintTop_creator="1"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintVertical_bias="0.0"/>
+
+  <LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="350dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    tools:layout_constraintBottom_creator="1"
+    tools:layout_constraintLeft_creator="1"
+    tools:layout_constraintTop_creator="1">
+
+    <TextView
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.11"
+      android:gravity="center"
+      android:text="사진전환 지연시간(초)"
+      android:textSize="30sp"/>
+
+    <EditText
+      android:id="@+id/editTime"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.11"
+      android:ems="10"
+      android:gravity="center"
+      android:inputType="numberSigned"/>
+
+    <Button
+      android:id="@+id/btnSave"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="저장"/>
+
+    <TextView
+      android:id="@+id/txtResult"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.59"
+      android:gravity="center"
+      android:text="변경사항 없음"
+      android:textColor="#FF0000"
+      android:textSize="20sp"/>
+
+
+  </LinearLayout>
+</android.support.constraint.ConstraintLayout>
